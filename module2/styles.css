@@ -7,6 +7,9 @@ p{
   color: #90ff34;
   background-color: #ff0054;
 }
+*{
+  box-sizing: border-box;
+}
 #box1{}
 #box2{}
 #box3{}
