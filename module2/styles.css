@@ -21,7 +21,7 @@ p{
   margin-bottom: 10px;  text-align: center;
 }
 #box1, #box2, #box3 {
-   width: 33.33%; padding:5px; 
+   width: 33.33%; padding:5px; height: 500px;
   }
 #box2, #box3 
   {
@@ -37,9 +37,12 @@ p{
      width:50%;
   padding:5px;
   margin:5px;
+     }
+ #box2 
+  {
     float: left;
   }
-
+  
 #box3{
    width:100%;
   padding:5px;
