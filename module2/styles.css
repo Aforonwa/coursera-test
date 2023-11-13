@@ -13,13 +13,31 @@ p{
   box-sizing: border-box;
 }
 @media (min-width:992px){
-  
+#box1{
+  width:33%;
+  padding:5px;
+  margin:5px;
+}
+#box2{
+    width:33%;
+  padding:5px;
+  margin:5px;
+}
+#box3{
+   width:33%;
+  padding:5px;
+  margin:5px; 
+
 }
 @media (min-width:768px) and (max-width:991px){
-  
+  #box1{}
+#box2{}
+#box3{}
 }
 @media (max-width:767px){
-  
+#box1{}
+#box2{}
+#box3{}
 }
 h1{
   margin-bottom: 10px;
@@ -28,7 +46,5 @@ h1{
   margin-left:auto;
   margin-right:auto;
 }
-#box1{}
-#box2{}
-#box3{}
+
 
