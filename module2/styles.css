@@ -9,7 +9,10 @@ p{
   color: #90ff34;
   background-color: #ff0054;
 }
-
+div {
+  height: 300px;
+  background-color: blue;
+}
 *{
    margin:0;
   padding:0;
@@ -21,7 +24,7 @@ p{
   margin-bottom: 10px;  text-align: center;
 }
 #box1, #box2, #box3 {
-   width: 33.33%; padding:5px; height: 30%;
+   width: 33.33%; padding:5px; 
   }
 #box2, #box3 
   {
