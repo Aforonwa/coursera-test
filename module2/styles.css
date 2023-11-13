@@ -9,6 +9,10 @@ p{
   color: #90ff34;
   background-color: #ff0054;
 }
+div
+{
+  float: left;
+}
 *{
    margin:0;
   padding:0;
