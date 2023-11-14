@@ -1,1 +1,121 @@
+body
+{
+  margin:0;
+  padding:0;
+}
+
+p{
+  
+  
+  color: #90ff34;
+  /**background-color: #ff0054; **/
+}
+
+
+*{
+   margin:0;
+  padding:0;
+  box-sizing: border-box;
+  
+ 
+}
+
+div {
+  height: 300px;
+  background-color: grey; 
+  width: 100%;
+  border-width: 5px;
+}
+
+
+@media (min-width:992px){
+    
+      h1{
+  margin-bottom: 10px;  text-align: center;
+}
+
+      #box1, #box2, #box3 {
+   width: 33.33%; padding:20px; height: 100%; position: relative;float: left; background-color: white;
+  }
+
+   
+ 
+}
+
+@media (min-width:768px) and (max-width:991px){
+ 
+      h1{
+  margin-bottom: 10px;
+  text-align: center;
+}
+  
+      #box1, #box2{
+     width:50%;
+  padding:20px;
+float:left;
+  
+     }
+
+     
+
+      #box3{
+   width:100%;
+  padding:20px;
+  clear: both;
+}
+
+}
+
+@media (max-width:767px){
+  
+      h1{
+  margin-bottom: 10px;
+  text-align: center; 
+  color: black;
+}
+
+      #box1,#box2, #box3 {
+   width:100%;
+  padding:5px;
+
+ 
+}
+
+
+
+}
+
+.container{
+width: 80%;
+height: 80%;
+clear: both;
+border: 5px solid black;
+padding: 0px 0px 5px 5px;
+color: white;
+background-color: grey;
+}
+
+
+.container1{
+border: 5px solid black;
+float: right;
+background-color: blue;
+}
+.container2{
+clear: both;
+
+}
+
+.container3{
+border: 5px solid black;
+float: right;
+background-color: green;
+}
+
+.container4{
+border: 5px solid black;
+float: right;
+background-color: maroon;
+}
+
 
