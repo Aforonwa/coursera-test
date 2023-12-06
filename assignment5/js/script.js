@@ -9,12 +9,7 @@ $(function () {
     }
   });
 
-  // In Firefox and Safari, the click event doesn't retain the focus
-  // on the clicked button. Therefore, the blur event will not fire on
-  // user clicking somewhere else in the page and the blur event handler
-  // which is set up above will not be called.
-  // Refer to issue #28 in the repo.
-  // Solution: force focus on the element that the click event fired on
+  
   $("#navbarToggle").click(function (event) {
     $(event.target).focus();
   });
@@ -143,7 +138,10 @@ $(function () {
       var name = "" + categories[i].name;
       var short_name = categories[i].short_name;
       html = insertProperty(html, "name", name);
-      html = insertProperty(html, "short_name", short_name);
+      html =
+        insertProperty(html, 
+                       "short_name", 
+                       short_name);
       finalHtml += html;
     }
 
@@ -206,24 +204,36 @@ $(function () {
     for (var i = 0; i < menuItems.length; i++) {
       // Insert menu item values
       var html = menuItemHtml;
-      html = insertProperty(html, "short_name", menuItems[i].short_name);
-      html = insertProperty(html, "catShortName", catShortName);
-      html = insertItemPrice(html, "price_small", menuItems[i].price_small);
+      html =
+        insertProperty(html, "short_name", menuItems[i].short_name);
+      html =
+        insertProperty(html, 
+                            "catShortName", 
+                            catShortName);
+      html = insertItemPrice(html,
+                             "price_small", 
+                             menuItems[i].price_small);
       html = insertItemPortionName(
         html,
         "small_portion_name",
         menuItems[i].small_portion_name
       );
-      html = insertItemPrice(html, "price_large", menuItems[i].price_large);
+      html = insertItemPrice(html, 
+                             "price_large",
+                             menuItems[i].price_large);
       html = insertItemPortionName(
         html,
         "large_portion_name",
         menuItems[i].large_portion_name
       );
-      html = insertProperty(html, "name", menuItems[i].name);
-      html = insertProperty(html, "description", menuItems[i].description);
+      html = insertProperty(html,
+                            "name",
+                            menuItems[i].name);
+      html = insertProperty(html, 
+                            "description", 
+                            menuItems[i].description);
 
-      // Add clearfix after every second menu item
+    
       if (i % 2 != 0) {
         html +=
           "<div class='clearfix visible-lg-block visible-md-block'></div>";
@@ -237,7 +247,9 @@ $(function () {
   }
 
   // Appends price with '$' if price exists
-  function insertItemPrice(html, pricePropName, priceValue) {
+  function insertItemPrice(html,
+                           pricePropName,
+                           priceValue) {
     // If not specified, replace with empty string
     if (!priceValue) {
       return insertProperty(html, pricePropName, "");
@@ -248,8 +260,10 @@ $(function () {
     return html;
   }
 
-  // Appends portion name in parens if it exists
-  function insertItemPortionName(html, portionPropName, portionValue) {
+  
+  function insertItemPortionName(html,
+                                 portionPropName, 
+                                 portionValue) {
     // If not specified, return original string
     if (!portionValue) {
       return insertProperty(html, portionPropName, "");
